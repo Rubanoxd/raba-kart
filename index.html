@@ -3,71 +3,123 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Raba Kart · Soporte</title>
-<meta name="description" content="Ayuda y contacto de Raba Kart, juego de carreras por calles reales de Catalunya para iPhone y iPad.">
+<title>Raba Kart</title>
+<meta name="description" content="Raba Kart: carreras por calles reales de Catalunya para iPhone y iPad. Montjuïc, La Remunta, daños en tiempo real y conducción realista.">
+<meta property="og:title" content="Raba Kart">
+<meta property="og:description" content="Carreras por calles reales de Catalunya para iPhone y iPad.">
+<meta property="og:image" content="https://rubanoxd.github.io/raba-kart/media/montjuic_poster.jpg">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="img/icono.png">
 </head>
-<body>
-<main>
-  <header>
-    <div class="brand">
-      <img src="img/icono.png" alt="Icono de Raba Kart">
-      <span class="kicker">Raba Kart · iPhone y iPad</span>
-    </div>
-    <h1>Soporte</h1>
-    <span class="stamp">JUEGO EN DESARROLLO ACTIVO</span>
-  </header>
-
-  <img class="hero" src="img/montjuic.jpg" alt="Un coche blanco por la avenida arbolada del circuito de Montjuïc">
-
-  <div class="card">
-    <p><strong>¿Algo no va bien o tienes una idea?</strong> Escríbenos y cuéntanos qué dispositivo usas y qué pasó.
-    Respondemos lo antes posible.</p>
-    <p class="mail"><a href="mailto:rabaffffhh@gmail.com?subject=Raba%20Kart">rabaffffhh@gmail.com</a></p>
+<body class="home">
+<nav class="top">
+  <a class="logo" href="./"><img src="img/icono.png" alt="">Raba Kart</a>
+  <div class="links">
+    <a href="#circuitos">Circuitos</a><a href="#coches">Coches</a><a href="#novedades">Novedades</a><a href="soporte.html">Soporte</a>
   </div>
+</nav>
 
-  <section>
-    <h2>Requisitos</h2>
-    <p>iPhone o iPad con chip A12 Bionic o posterior (iPhone XS, XR o más nuevo) e iOS 15 o posterior.</p>
+<header class="hero">
+  <video autoplay muted loop playsinline preload="metadata" poster="media/montjuic_poster.jpg">
+    <source src="media/montjuic.mp4" type="video/mp4">
+  </video>
+  <div class="hero-text">
+    <span class="stamp">JUEGO EN DESARROLLO ACTIVO</span>
+    <h1>Carreras por calles de verdad</h1>
+    <p>Montjuïc y L'Hospitalet recreados con la cartografía oficial de Catalunya: las mismas curvas, cuestas, árboles y
+    señales que en la calle. Para iPhone y iPad.</p>
+    <a class="store" href="https://apps.apple.com/app/id6825461474">Ver en el App Store</a>
+  </div>
+</header>
+
+<main class="wide">
+  <section id="circuitos" class="block">
+    <h2>Circuitos</h2>
+    <div class="cards">
+      <article class="card track">
+        <img src="media/trazado_c2.svg" alt="Trazado del circuito de Montjuïc">
+        <div>
+          <h3>Montjuïc <small>Barcelona</small></h3>
+          <p>El trazado histórico de 1933–1975, en su sentido original: del Estadi a Santa Madrona y vuelta por
+          avenidas de pinos.</p>
+          <dl class="facts"><div><dt>Vuelta</dt><dd>3,8 km</dd></div><div><dt>Desnivel</dt><dd>67 m</dd></div><div><dt>Vueltas</dt><dd>3</dd></div></dl>
+        </div>
+      </article>
+      <article class="card track">
+        <img src="media/trazado_c1.svg" alt="Trazado del circuito de La Remunta">
+        <div>
+          <h3>La Remunta <small>L'Hospitalet</small></h3>
+          <p>Un circuito urbano rápido entre bloques de pisos, con vallas de hormigón, pasos de cebra y semáforos.</p>
+          <dl class="facts"><div><dt>Vuelta</dt><dd>990 m</dd></div><div><dt>Curvas</dt><dd>cerradas</dd></div><div><dt>Vueltas</dt><dd>3</dd></div></dl>
+        </div>
+      </article>
+    </div>
   </section>
 
-  <section>
-    <h2>Preguntas frecuentes</h2>
-    <dl>
-      <dt>¿Cómo se conduce sin mando?</dt>
-      <dd>Gira el iPhone como un volante para girar y usa los pedales táctiles de la pantalla para acelerar y frenar.</dd>
-      <dt>¿Qué mandos funcionan?</dt>
-      <dd>Los de PlayStation, Xbox y los mandos MFi. Conéctalo por Bluetooth en Ajustes antes de abrir el juego.</dd>
-      <dt>¿Cómo cambio la matrícula o el color?</dt>
-      <dd>En el selector de coche, con los botones «Color» y «Matrícula», o desde el menú de pausa.</dd>
-      <dt>¿Cómo importo un coche?</dt>
-      <dd>Copia el archivo del coche (.zip) en Archivos › En mi iPhone › Raba Kart y pulsa «Importar» en el selector de coche.</dd>
-      <dt>Mi coche se ha quedado destrozado o atascado</dt>
-      <dd>Pulsa el botón ↺ de la pantalla: el coche vuelve a la carretera y, si el motor no arranca, sale reparado.
-      «Reiniciar carrera», en el menú de pausa, empieza de cero con el coche nuevo.</dd>
-      <dt>¿Recoge datos el juego?</dt>
-      <dd>No. Funciona sin conexión y no envía nada. Lo explica la <a href="privacidad.html">política de privacidad</a>.</dd>
-    </dl>
+  <section id="coches" class="block">
+    <h2>Coches</h2>
+    <div class="cards">
+      <article class="card car">
+        <img src="media/coche_aviles.jpg" alt="Aviles Variant blanco en Montjuïc">
+        <div><h3>Aviles Variant</h3><p>Familiar de 2016, tracción trasera, 1.900 kg y cinco marchas. Pesado en las curvas,
+        rapidísimo en las rectas.</p></div>
+      </article>
+      <article class="card car">
+        <img src="media/coche_pudretech.jpg" alt="Pudretech blanco en La Remunta">
+        <div><h3>Pudretech</h3><p>Berlina compacta, ligera y nerviosa. Ideal para las curvas cerradas de La Remunta.</p></div>
+      </article>
+    </div>
+    <p class="note">Cada coche lleva una matrícula española de su época, y puedes poner la tuya. También puedes importar
+    coches propios desde la app Archivos.</p>
   </section>
 
-  <section>
-    <h2>Un juego que crece</h2>
-    <p>Raba Kart está en desarrollo activo y cada actualización trae mejoras: circuitos, coches, gráficos y conducción.
-    Tus comentarios nos ayudan a decidir qué viene después.</p>
+  <section class="block features">
+    <h2>Cómo se juega</h2>
+    <ul class="grid4">
+      <li><b>Física realista</b>Peso, transferencia de masas, derrapes y tracción delantera o trasera.</li>
+      <li><b>Daños en tiempo real</b>Abolladuras, faros y cristales rotos, humo, fuego y explosiones.</li>
+      <li><b>Con o sin mando</b>Gira el iPhone como un volante o conecta un mando PlayStation, Xbox o MFi.</li>
+      <li><b>Calles reales</b>Ortofoto, LiDAR y mapas del ICGC, el AMB y OpenStreetMap.</li>
+    </ul>
   </section>
 
-  <section class="en">
-    <h2>Support (English)</h2>
-    <p>Raba Kart is a racing game on real streets of Catalonia for iPhone and iPad (A12 chip or later, iOS 15 or later).
-    For help or feedback, email <a href="mailto:rabaffffhh@gmail.com?subject=Raba%20Kart">rabaffffhh@gmail.com</a>.
-    The game collects no data; see the <a href="privacidad.html">privacy policy</a>.</p>
+  <section class="block">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="media/galeria/01_la_remunta_115.jpg" alt="Pudretech a 115 km/h en La Remunta" loading="lazy">
+      <img src="media/galeria/02_montjuic_avenida.jpg" alt="Avenida arbolada de Montjuïc" loading="lazy">
+      <img src="media/galeria/03_danos.jpg" alt="Aviles Variant abollado tras un choque" loading="lazy">
+      <img src="media/galeria/04_patrocinadores.jpg" alt="Vallas de patrocinadores en La Remunta" loading="lazy">
+      <img src="media/galeria/05_montjuic_vallas.jpg" alt="Vallas rojas y blancas en Montjuïc" loading="lazy">
+      <img src="media/galeria/06_selector.jpg" alt="Selector de coche" loading="lazy">
+    </div>
+  </section>
+
+  <section id="novedades" class="block">
+    <h2>Novedades</h2>
+    <ol class="log">
+      <li><span class="stamp">PRÓXIMAMENTE</span><p>Rivales controlados por la IA, clasificaciones de Game Center, un
+      tramo real de la C-32 y más coches.</p></li>
+      <li><span class="ver">0.5</span><p>Primera versión en el App Store. Nuevas páginas de soporte y privacidad.</p></li>
+      <li><span class="ver">0.4</span><p>Coches con nombre propio (Aviles Variant y Pudretech), matrículas de época
+      aleatorias, pantalla de créditos e icono nuevo.</p></li>
+      <li><span class="ver">0.3</span><p>Daños en tiempo real y el circuito de Montjuïc.</p></li>
+      <li><span class="ver">0.1</span><p>Primera prueba: La Remunta, conducción girando el móvil y con mando.</p></li>
+    </ol>
+  </section>
+
+  <section class="block card contact">
+    <h2>¿Dudas o ideas?</h2>
+    <p>Escríbenos a <a href="mailto:rabaffffhh@gmail.com?subject=Raba%20Kart">rabaffffhh@gmail.com</a> o consulta las
+    <a href="soporte.html">preguntas frecuentes</a>.</p>
   </section>
 
   <footer>
     <span>© 2026 Rubén Martín del Burgo</span>
-    <a href="privacidad.html">Política de privacidad</a>
+    <a href="soporte.html">Soporte</a>
+    <a href="privacidad.html">Privacidad</a>
+    <span>Mapas: ICGC, AMB, © colaboradores de OpenStreetMap</span>
   </footer>
 </main>
 </body>
