@@ -28,7 +28,8 @@ h1 { font: 800 clamp(2.2rem, 7vw, 3.2rem)/1 var(--display); margin: 0; text-wrap
 .stamp { justify-self: start; font: 700 .9rem/1 var(--display); letter-spacing: .08em; background: var(--plate); color: #1d2126;
   padding: .35rem .6rem; border-radius: 3px; }
 .hero { width: 100%; max-width: 100%; border-radius: 6px; display: block; }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 1.1rem 1.25rem; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 1.1rem 1.25rem;
+  display: grid; gap: .7rem; }
 .card p { margin: 0; }
 h2 { font: 700 1.45rem/1.15 var(--display); letter-spacing: .02em; margin: 0 0 .4rem; text-wrap: balance; }
 section { display: grid; gap: .3rem; }
