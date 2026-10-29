@@ -1,0 +1,44 @@
+/* Raba Kart: one reading column, barrier red accent, plate-yellow stamps */
+:root {
+  --bg: #f6f6f3;
+  --fg: #1d2126;
+  --muted: #5b626b;
+  --line: #d9dbd6;
+  --accent: #c8102e;
+  --plate: #f2c94c;
+  --card: #ffffff;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --ui: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #121417; --fg: #e8e9e6; --muted: #a2a8b0; --line: #2c3036; --accent: #ff5a6e; --plate: #e0b83f;
+          --card: #1a1d21; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 1.06rem/1.65 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+main { max-width: 40rem; margin: 0 auto; padding-block: 2.5rem 4rem; display: grid; gap: 2rem; }
+header { display: grid; gap: .6rem; border-bottom: 3px solid var(--accent); padding-bottom: 1.2rem; }
+.brand { display: flex; gap: .9rem; align-items: center; }
+.brand img { width: 64px; height: 64px; border-radius: 14px; }
+.kicker { font: 600 .78rem/1 var(--ui); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+h1 { font: 800 clamp(2.2rem, 7vw, 3.2rem)/1 var(--display); margin: 0; text-wrap: balance; letter-spacing: .01em; }
+.stamp { justify-self: start; font: 700 .9rem/1 var(--display); letter-spacing: .08em; background: var(--plate); color: #1d2126;
+  padding: .35rem .6rem; border-radius: 3px; }
+.hero { width: 100%; max-width: 100%; border-radius: 6px; display: block; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 1.1rem 1.25rem; }
+.card p { margin: 0; }
+h2 { font: 700 1.45rem/1.15 var(--display); letter-spacing: .02em; margin: 0 0 .4rem; text-wrap: balance; }
+section { display: grid; gap: .3rem; }
+section p, section ul, section dl { margin: 0; }
+ul { padding-left: 1.2rem; display: grid; gap: .35rem; }
+dt { font-weight: 600; }
+dd { margin: 0 0 .7rem; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.mail { font: 600 1.1rem/1.3 var(--ui); word-break: break-all; }
+.en { border-top: 1px solid var(--line); padding-top: 1.5rem; color: var(--muted); font-size: .98rem; }
+.en h2 { color: var(--fg); }
+footer { font: .82rem/1.5 var(--ui); color: var(--muted); display: flex; flex-wrap: wrap; gap: .4rem 1rem; }
